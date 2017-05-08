@@ -45,6 +45,18 @@
     [class*="col-"] {
         width: 100%;
     }
+
+    .panel {
+        margin-top: 15px;
+    }
+
+    .text-profile {
+        padding-top: 15px;
+    }
+
+    .ender-item {
+    margin-top: 15px;
+    }
 }
 
 /* VŠEOBECNÁ DEFINICE */
@@ -61,23 +73,268 @@ body {
 img {
     width: 100%;
     height: auto;
+    box-sizing: border-box;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+/* PROFILE */
+
+.profile {
+    background: #2ECC71;
+    padding: 20px;
+    border-radius: 40px;
+    border: 15px solid #27AE60;
+}
+
+.nadpis-profile {
+    text-align: center;
 }
 
 /* FOOTER */
 
 .footer {
-	background-color: #292B2C;
+	background-color: #2C3E50;
 	color: #FFFFFF;
 	text-align: center;
 	padding: 30px;
 }
 
+.ender {
+    padding: 50px;
+    background-color: #34495E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* OBRÁZKY */
+
+.img-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+/* PANEL */
+
+.panel {
+    width: 300px;
+    border: 1px solid #d4d9db;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-heading {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.dovednosti {
+    padding-bottom: 25px;
+}
+
+.dovednost {
+    margin-bottom: 25px;
+}
+
+.panel-blue {
+    background: #2980B9;
+}
+
+.panel-green {
+    background: #27AE60;
+}
+
+.panel-red {
+    background: #ce3e2f;
+}
+
 /* FORMÁTOVÁNÍ */ 
+
+.text-center {
+    text-align: center;
+}
 
 .text-upper {
 	text-transform: uppercase;
 }
 
+.text-red {
+    color: #E74C3C;
+}
+
+.text-blue {
+    color: #3498DB;
+}
+
+.text-green {
+    color: #2ECC71;
+}
+
+.text-facebook {
+    color: #3b5998;
+}
+
+.text-twitter {
+    color: #55acee;
+}
+
+.text-instagram {
+    color: #406e94;
+}
+
+.text-linkedin {
+    color: #007bb6;
+}
+
+.text-github {
+    color: #000000;
+}
+
 .footer-link {
 	color: #FFFFFF;
+}
+
+.col-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.social-icons {
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* NADPISY */
+
+.h2-profile {
+    color: #ECF0F1;
+}
+
+.h2-form {
+    color: #ECF0F1;
+    margin-top: -7px;
+}
+
+/* BUTTONS */
+
+.btn {
+    padding: 11.5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-right {
+    float: right;
+}
+
+/* INVISIBLE BUTTONS */
+
+.btn-inverse {
+    border: 2px solid #34495E;
+    color: #34495E;
+    font-weight: bold;
+}
+
+.btn-inverse:hover {
+    background: #34495E;
+    color: white;
+    font-weight: normal;
+}
+
+.btn-green {
+    border: 2px solid #2ECC71;
+    color: #2ECC71;
+    font-weight: bold;
+}
+
+.btn-green:hover {
+    background: #2ECC71;
+    color: white;
+    font-weight: normal;
+}
+
+.btn-red {
+    border: 2px solid #E74C3C;
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+.btn-red:hover {
+    background: #E74C3C;
+    color: white;
+    font-weight: normal;
+}
+
+.btn-primary {
+    border: 2px solid #3498DB;
+    color: #3498DB;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #3498DB;
+    color: white;
+    font-weight: normal;
+}
+
+/* NORMAL BUTTONS */
+
+.btn-info {
+    background-color: #3498DB;
+}
+
+.btn-info:hover {
+    background-color: #2980B9;
+}
+
+/* INPUT and TEXTAREA */
+
+input[type="text"] {
+    appearance: none;
+    width: 100%;
+    margin: 0 15px;
+    height: 35px;
+    padding: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 3.5px #2C3E50;
+    color: #2C3E50;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa';
+}
+
+textarea {
+    appearance: none;
+    width: 100%;
+    margin: 0 15px;
+    padding: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 3.5px #2C3E50;
+    color: #2C3E50;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa';
+    resize: none;
+}
+
+/* FORMS */
+
+.form {
+    padding: 25px;
+    background-color: #34495E;
+    border: solid 15px #2C3E50; 
+    border-radius: 40px;
 }
