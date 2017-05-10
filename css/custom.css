@@ -238,6 +238,11 @@ a {
     float: right;
 }
 
+.btn-form {
+    background-color: #007bb6;
+    float: right;
+}
+
 /* INVISIBLE BUTTONS */
 
 .btn-inverse {
@@ -337,4 +342,25 @@ textarea {
     background-color: #34495E;
     border: solid 15px #2C3E50; 
     border-radius: 40px;
+}
+
+.form-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.text-form {
+    color: #ECF0F1;
+    font-size: 22px;
+    margin-bottom: -5px;
+}
+
+.nadpis-right {
+    text-align: center;
+}
+
+.nadpis-left {
+    text-align: center;
 }

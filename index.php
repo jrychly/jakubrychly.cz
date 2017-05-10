@@ -71,30 +71,51 @@
         </div>
         <div class="col-9 text-profile">
         <h3 class="h2-profile">Kdo jsem</h3>
-        Jsem student a curler z Prahy. Ve volném čase se intenzivně věnuji zímímu olympijskému sportu curling, kromě toho rád programuji v PHP a tvořím v něm webové aplikace. Nadesktopu si hraju s programovacím jazykem Python a nedělá mi problém HTML & CSS, u kterého využívám framework Bootstrap.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
         <h3 class="h2-profile">Co umím</h3>
-        Umím PHP včetně OOP a MVC, HTML & CSS s využitím frameworků Bootstrap a SASS, Python a tvorbu desktopových aplikací v něm, nastavení linuxového serveru a jeho spravování (webový server, TS server, herní server), kromě toho mi nedělá problém střih a editace videa.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
         <h3 class="h2-profile">Co chci umět</h3>
-        Chci umět dokonale vyvíjet software v PHP a ovládat většinu jeho funkcí - ovládnout frameworky jako jsou Nette, Laravel nebo Composer. Dále bych chtěl ovládat plnohodnotně Linuxový server a nemít žádný problém s využíváním Linux na serverech a na desktopech.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
         <h3 class="h2-profile">Co studuji</h3>
-        Studuji Střední průmyslovou školu na Proseku, která se nachází na Praze 9, studuji obor Informační technologie se zaměřením na Linuxového administrátora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
         </div>
     </div>
 
     <div class="container form">
-    <h1 class="h2-form">Kontaktujte mě!</h1>
-        <div class="col-6">
+    <div class="col-4 nadpis-left"><h1 class="h2-form">Napište mi dopis...</h1></div><div class="col-8 nadpis-right"><h1 class="h2-form">...nebo mě kontaktujte pomocí emailu!</h1></div>
+    <div class="col-4 form-center"><span class="fa-stack fa-3x">
+                            <i class="fa fa-circle fa-stack-2x text-linkedin"></i>
+                            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <p class="text-form">Smotlachova 582/2, 142 00</p>
+                        <p class="text-form">Praha 4 - Kamýk</p>
+                        <p class="text-form">Praha, Česká republika</p>
+                        </div>
+        <div class="col-4">
         <input type="text" placeholder="Jméno a přijmení">
         </div>
-        <div class="col-6">
+        <div class="col-4">
         <input type="text" placeholder="Emailová adresa">
       </div>
-      <div class="col-12">
+      <div class="col-8">
         <textarea placeholder="Vaše zpráva"></textarea>
       </div>
+      <a href="#" class="btn btn-form">Odeslat</a>
     </div>
     </div>
-
+    
     <div class="col-12 ender">
         <div class="col-4 ender-item"><h2>Nejnovější článek na blogu:</h2>
         <h3><a href="#">Nadpis článku</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
