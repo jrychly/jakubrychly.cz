@@ -22,6 +22,8 @@
 
 <body>
 
+    <div class="header"><h1 class="h1-header">Jakub Rychlý</h1><h3>Programátor a kodér z Prahy</h3></div>
+
     <div class="container">
         <div class="col-4 col-center">
             <div class="panel panel-red">
@@ -115,7 +117,7 @@
       <a href="#" class="btn btn-form">Odeslat</a>
     </div>
     </div>
-    
+
     <div class="col-12 ender">
         <div class="col-4 ender-item"><h2>Nejnovější článek na blogu:</h2>
         <h3><a href="#">Nadpis článku</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
