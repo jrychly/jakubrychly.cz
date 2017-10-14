@@ -139,10 +139,6 @@ a {
     border-radius: 10px;
 }
 
-.dovednosti {
-    padding-bottom: 25px;
-}
-
 .dovednost {
     margin-bottom: 25px;
 }
@@ -238,6 +234,11 @@ a {
 
 .h1-header {
     font-size: 70px;
+    background-color: #E74C3C;
+    width: 40%;
+    margin-left: 30vw;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /* BUTTONS */
@@ -408,11 +409,11 @@ textarea {
 /* HEADER */
 
 .header {
-    background-color: #3498DB;
+    background-image: url('https://i.ytimg.com/vi/DgXEZMt-5aU/maxresdefault.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 25vh;
+    padding-top: 35vh;
     height: 100vh;
     color: #ECF0F1;
     text-align: center;
