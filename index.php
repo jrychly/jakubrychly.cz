@@ -32,8 +32,7 @@
                             <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                         </span>
                 <div class="panel-heading dovednosti">
-                    <h4>Tvorba webů</h4>
-                    <p class="dovednost">Tvorba responsivních webů za pomocí nejnovějších technologií na zakázku.</p>
+                    <h3>Tvorba webů</h3>
                 </div>
             </div>
         </div>
@@ -44,8 +43,7 @@
                             <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
                         </span>
                 <div class="panel-heading dovednosti">
-                    <h4>Tvorba mobilních aplikací</h4>
-                    <p class="dovednost">Nativní mobilní aplikace za pomocí, které se drží s dobou a jsou dostupné všem.</p>
+                    <h3>Tvorba mobilních aplikací</h3>
                 </div>
             </div>
         </div>
@@ -56,11 +54,15 @@
                             <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                         </span>
                 <div class="panel-heading dovednosti">
-                    <h4>Vývoj API</h4>
-                    <p class="dovednost">Kompletní vývoj API, které komunikuje s aplikací, otevřenost.</p>
+                    <h3>Vývoj API</h3>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="col-12 centered">
+        <h2>Kdo jsem</h2>
+        <p>lorem ipsum dolor sit amte</p>
     </div>
 
     <div class="col-12 social-icons" style="margin: 0 auto; margin-bottom: 30px;">

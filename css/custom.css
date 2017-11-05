@@ -6,7 +6,7 @@
 
 /* FONTS */
  @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400|Raleway:400,700&subset=latin-ext");
- @import url('https://fonts.googleapis.com/css?family=Nunito');
+ @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 /* COL system */
 
@@ -125,14 +125,25 @@ a {
 
 .panel {
     max-width: 300px;
-    border: 1px solid #d4d9db;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.panel-blue {
+    border: 5px solid #3d8baa;
+}
+
+.panel-red {
+    border: 5px solid #a13a3f;
+}
+
+.panel-green {
+    border: 5px solid #417536;
+}
+
 .panel-heading {
-    background-color: white;
+    color: white;
     padding-top: 1px;
     padding-bottom: 1px;
     margin: 8px;
@@ -156,6 +167,10 @@ a {
 }
 
 /* FORMÁTOVÁNÍ */ 
+
+.centered {
+    text-align: center
+}
 
 .text-center {
     text-align: center;
