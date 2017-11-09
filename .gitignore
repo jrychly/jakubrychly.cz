@@ -3,4 +3,6 @@ node_modules/sass/
 
 node_modules/\.bin/
 
+css/*.sass
+
 *.config
