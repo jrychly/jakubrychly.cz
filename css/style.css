@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  font-family: 'Open Sans'; }
+
+h1 {
+  color: #4CAF50; }
+
+h2 {
+  color: #F44336; }
+
+h3 {
+  color: #3F51B5; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #bfbfbf; }
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://i.ytimg.com/vi/DgXEZMt-5aU/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.content {
+  margin: 20px; }
+
+.footer {
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #1A237E; }
