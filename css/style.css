@@ -4,7 +4,8 @@ body {
   font-family: 'Open Sans'; }
 
 h1 {
-  color: #4CAF50; }
+  color: #4CAF50;
+  margin-top: 0px; }
 
 h2 {
   color: #F44336; }
@@ -28,9 +29,57 @@ a {
 
 .content {
   margin: 20px; }
+  .content-italic {
+    font-style: italic; }
+  .content-name {
+    text-align: right;
+    margin-right: 5%; }
+
+.btn {
+  margin: 15px;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  padding: 15px; }
+  .btn-primary {
+    background-color: #3F51B5;
+    color: #fff; }
+    .btn-primary:hover {
+      background-color: #32408f;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px); }
+  .btn-green {
+    background-color: #4CAF50;
+    color: #fff; }
+    .btn-green:hover {
+      background-color: #3d8b40;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+      -webkit-box-shadow: 0px 5px 10px #AAA;
+      box-shadow: 0px 5px 10px #AAA; }
 
 .footer {
   padding: 25px;
   text-align: center;
   color: #fff;
   background-color: #1A237E; }
+
+@-webkit-keyframes buttonHover {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: 25px; } }
+
+@keyframes buttonHover {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: 25px; } }
