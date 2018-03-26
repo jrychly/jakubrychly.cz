@@ -7,3 +7,5 @@ css/*.sass
 
 *.config
 *.sass
+
+css/style\.css\.map
