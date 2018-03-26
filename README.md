@@ -1,2 +1,2 @@
-# Jakub Rychlý - oficiální portfolio
-Portfolio bylo vytvořeno v roce 2017, design byl inspirován Flat designem, ale je kompletně nakódovaný podle mě.
+# Jakub Rychlý
+Oficiální portfolio, které jsem kompletně sám nakódil. Je šířitelné pod MIT licencí.
