@@ -1,0 +1,778 @@
+/* Section
+---------------------*/
+.section {
+	padding: 100px 0;
+	position: relative;
+	@include down-md {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include down-sm {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.m-15px-tb {
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+/* Section Title
+---------------------------*/
+.section-title {	
+	padding-bottom: 40px;
+	@include down-lg {
+		padding-bottom: 30px;
+	}
+	h2 {
+		font-size: 42px;
+		color: $px-dark;
+		font-weight: 600;
+		margin: 0 0 18px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		z-index: 1;
+		@include down-lg {
+			font-size: 38px;
+		}
+		@include down-lg {
+			font-size: 32px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 5px;
+			left:auto;
+			right: 0;
+			height: 30%;
+			width: 0;
+			@include transition(ease all 0.35s); 
+			background: $px-theme;
+			opacity: 0.3;
+			z-index: -1;
+			.section:hover & {
+				left: 0;
+				right: auto;
+				width: 100%;
+			}
+		}
+	}
+	p {
+		font-size: 18px;
+		margin: 0; 
+		@include down-lg {
+			font-size: 16px;
+		}
+	}
+	&.white {
+		h2 {
+			color: $px-white;
+		}
+		p {	
+			color: rgba($px-white, 0.6);
+		}
+	}
+}
+
+.sm-title {
+	h6 {
+		font-size: 22px;
+		font-weight: 600;
+		color: $px-dark;	
+	}
+}
+
+/* Page title
+--------------------------------*/
+.page-title {
+	padding: 160px 0 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@include down-lg {
+		padding-top: 130px;
+	}
+	h1 {
+		font-weight: 700;
+		margin-bottom: 15px;
+		color: $px-dark;
+		@include down-md {
+			font-size: 30px;
+		}
+	}
+}
+
+
+/* Breadcrumbs
+--------------------------------*/
+.breadcrumb {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: none;
+	border-radius: 0;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		font-weight: 400;
+		position: relative;
+		color: $px-dark;
+		+ li {
+			padding-left: 17px;
+			margin-left: 17px;
+			&:after {
+				content:"";
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: currentColor;
+				opacity: 0.5;
+				left: -2px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+		a {
+			color: $px-dark;
+		}
+	}
+	&.white {
+		li {
+			color: $px-white;
+			a {
+				color: $px-white;
+			}
+		}	
+	}
+}
+
+/* Home Banner
+---------------------------*/
+.home-banner {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: rgba($px-theme, 0.13);
+	&:after {
+		content: "";
+		width: 1000px;
+		height: 1000px;
+		border-radius: 50%;
+		position: absolute;
+		top: -200px;
+		left: -200px;
+		background-color: $px-white;
+		z-index: -1;
+		@include down-md {
+			display: none;
+		}
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	.full-screen {
+		min-height: 100vh;
+		padding-top: 120px;
+		padding-bottom: 70px;
+		@include down-sm {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
+	.hb-avatar {
+		border-radius: 10px;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 60vw;
+		height: 100vh;
+		@include down-lg {
+			width: 100vw;
+		}
+		img {
+			max-height: 100vh;
+		}
+	}
+	.hb-typo {
+		padding-left: 25px;
+		@include down-md {
+			padding: 45px 25px;
+			background: rgba($px-white, 0.8);
+			text-align: center;
+		}
+		h6 {
+			font-size: 28px;
+			margin-bottom: 10px;
+			color: $px-theme;
+			@include down-sm {
+				font-size: 18px;
+			}
+		}
+		h1 {
+			font-size: 70px;
+			font-weight: 600;
+			color: $px-dark;
+			margin-bottom: 10px;
+			@include down-lg {
+				font-size: 60px;
+			}
+			@include down-sm {
+				font-size: 40px;
+			}
+		}
+		h2 {
+			font-weight: 500;
+			margin: 0;
+			color: $px-dark;
+			font-size: 25px;
+			@include down-sm {
+				font-size: 18px;
+			}
+			span {
+				color: $px-theme;
+			}
+		}
+	}
+	.nav {
+		padding-top: 20px;
+		a {
+			width: 35px;
+			height: 35px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: $px-theme;
+			color: $px-white;
+			border-radius: 50%;
+			@include transition(ease all 0.35s); 
+			+ a {
+				margin-left: 5px;
+			}
+			&:hover {
+				background-color: $px-dark;
+			}
+		}
+	}
+}
+
+
+/* About Us
+---------------------------*/
+.about-text {
+	@include down-lg {
+		padding-top: 30px;
+	}
+	h2 {
+		color: $px-dark;
+		font-size: 50px;
+		font-weight: 600;
+		margin-bottom: 15px;
+		@include down-lg {
+			font-size: 35px;
+		}
+	}
+	p {
+		font-size: 18px;
+		@include down-lg {
+			font-size: 16px;
+		}
+	}
+	.counter-box {
+		background: $px-bg-1;
+		border: 1px dashed $px-theme;
+		padding: 20px;
+		border-radius: 10px;
+		@include down-lg {
+			padding: 10px;
+		}
+		h5 {
+			font-weight: 600;
+			color: $px-theme;
+			font-size: 35px;
+			margin: 0;
+			@include down-sm {
+				font-size: 30px;
+			}
+		}
+		p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 1.2;
+			color: $px-dark;
+			font-weight: 500;
+			@include down-lg {
+		    	font-size: 15px;
+			}
+			@include down-sm {
+		    	font-size: 14px;
+			}
+		}
+	}
+}
+.about-img {
+	img {
+		@include up-lg {
+			max-width: 120%;
+		}
+	}
+}
+
+/* Feature Box
+---------------------------*/
+.feature-box {
+	background: $px-white;
+	padding: 30px;
+	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+	position: relative;
+	top: 0;
+	@include transition(ease all 0.35s);
+	&:after {
+		content: "";
+		background: $px-theme;
+		position: absolute;
+		top: 0px;
+		left: -0px;
+		bottom: -0px;
+		right: 20px;
+		z-index: -1;
+		opacity: 0;
+		@include transition(ease all 0.35s); 
+	}
+	.icon {
+		width: 80px;
+		height: 80px;
+		font-size: 32px;
+		line-height: 120px;
+		background-color: $px-theme;
+		text-align: center;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 25px;
+		color: $px-white;
+		border-radius: 50%;
+	}
+	h5 {
+		color: $px-dark;
+		font-weight: 500;
+		font-size: 20px;
+		margin-bottom: 14px;
+	}
+	p {
+		margin: 0;
+	}
+	&:hover {
+		top: -3px;
+		&:after {
+			opacity:1;
+			top: 8px;
+			left: -8px;
+			bottom: -8px;
+		}
+	}
+}
+
+.feature-box-2 {
+    position: relative;
+    top: 0;
+    padding: 30px;
+    border: 1px solid #eee;
+    background: $px-white;
+    @include transition(ease all 0.35s); 
+    @include down-sm {
+    	padding: 20px;
+    }
+    &:hover {
+    	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+    	top: -3px;
+    }
+    .media {
+    	margin-bottom: 20px;
+    }
+	.icon {
+	    background: $px-theme;
+	    color: $px-white;
+	    width: 50px;
+	    height: 50px;
+	    text-align: center;
+	    border-radius: 50%;
+	    font-weight: 600;
+	    line-height: 50px;
+	    font-size: 21px;
+	}
+	h6 {
+	    float: left;
+	    background: $px-theme;
+	    color: $px-white;
+        padding: 4px 10px 4px 15px;
+	    font-size: 12px;
+	    margin: 0 0 0 -10px;
+	}
+	h5 {
+	    font-weight: 600;
+	    font-size: 16px;
+	    color: $px-dark;
+	    margin: 0 0 15px;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.feature-box-3 {
+    position: relative;
+    top: 0;
+    padding: 15px;
+    border: 1px solid #eee;
+    background: $px-white;
+    @include transition(ease all 0.35s); 
+    @include down-sm {
+    	padding: 10px;
+    }
+    &:hover {
+    	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+    	top: -5px;
+    }
+	.icon {
+		width: 50px;
+	    height: 50px;
+	    line-height: 50px;
+	    font-size: 14px;
+	    text-align: center;
+	    border-radius: 50%;
+	    background: $px-theme;
+	    color: $px-white;
+	    font-weight: 600;
+	    display: inline-block;
+	    vertical-align: top;
+	    position: relative;
+	    @include down-sm {
+	    	font-size: 12px;
+	    }
+	    &.percent {
+	    	span {
+	    		&:after {
+	    			content:"%";
+	    		}
+	    	}
+	    }
+	}
+	h5 {
+	    font-weight: 600;
+	    font-size: 16px;
+	    color: $px-dark;
+	    margin: 0;
+	    @include down-sm {
+	    	font-size: 14px;
+	    }
+	}
+	.media-body {
+		padding-left: 15px;
+	}
+}
+
+
+/* Portfolio
+---------------------------*/
+.portfolio-box {
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	@include transition(ease all 0.35s);
+	.portfolio-info {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		bottom: 10px;
+		left: 10px;
+		background: rgba($px-black, 0.8);
+		@include transition(ease all 0.35s);
+		opacity: 0;
+	}
+	.portfolio-info-in {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 25px;
+		h5 {
+			color: $px-white;
+			font-weight: 600;
+			font-size: 26px; 
+		}
+		span {
+			font-weight: 500;
+			color: $px-white;
+		}
+	}
+	.gallery-link {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		background: $px-theme;
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0;
+			&:after,
+			&:before {
+				content: "";
+				position:absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				background: $px-white;
+			}
+			&:after {
+				width: 16px;
+				height: 2px;
+			}
+			&:before {
+				width: 2px;
+				height: 16px;
+			}
+		}
+	}
+	&:hover {
+		box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+		top: -5px;
+		.portfolio-info {
+			opacity: 1;
+		}
+	}
+}
+
+
+/* Testmonial
+---------------------------*/
+.testmonial-box {
+	background: $px-white;
+	padding: 25px;
+	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+    position: relative;
+    margin: 15px 12px 20px;
+	.icon {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		font-size: 100px;
+		line-height: 1;
+		color: $px-theme;
+		opacity: 0.15;
+	}
+	.testmonial-text {
+		p {
+			font-size: 17px;
+		}
+	}
+	.rating-value {
+		font-size: 12px;
+		i {
+			color: #ff9900;
+		}
+	}
+}
+
+
+/* Call to action
+---------------------------*/
+.call-to-action {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	h3 {
+		color: $px-white;
+		margin: 0;
+	}
+}
+
+/* Blog Page
+---------------------------*/
+.blog-post {
+	margin-bottom: 20px;
+	.blog-img {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.blog-info {
+		padding-top: 25px;
+		h6 {
+			a {
+				color: $px-dark;
+				font-size: 20px;
+			}
+		}
+	}
+	.px-btn-arrow {
+		font-weight: 500;
+		color: $px-theme;
+		position: relative;
+		padding-left: 16px;
+		line-height: 1;
+		&:after {
+			content:"";
+			width: 8px;
+			height: 2px;
+			background: $px-theme;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+		}
+	}
+}
+
+
+/* Contact US
+---------------------------*/
+.contact-info {
+	background: $px-white;
+	padding: 30px;
+	height: 100%;
+	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+	h4 {
+		font-size: 28px;
+		color: $px-dark;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+	}
+	ul {
+		margin: 0;
+		padding: 10px 0 0;
+		list-style: none;
+	}
+	li {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.3;
+		position: relative;
+		i {
+			width: 30px;
+			text-align: center;
+			color: $px-theme;
+			font-size: 22px;
+		}
+		span {
+			padding-left: 10px;
+			color: $px-dark;
+		}
+		+ li {
+			padding-top: 30px;
+		}
+	}
+}
+
+.contactus-form {
+	background: $px-white;
+	padding: 30px;
+	box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+	h6 {
+		font-weight: 600;
+		color: $px-dark;
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	input {
+		height: calc(2em + .75rem + 2px);
+	}	
+	.form-control {
+	    font-size: 14px;
+	    box-shadow: none !important;
+	    &:focus {
+	    	border-color: $px-dark;
+	    }
+	}
+	.btn-bar {
+		padding-top: 15px;
+	}
+}
+
+
+/* Skill Bar
+---------------------------*/
+
+.skill-lt {
+	&:not(:first-child) {
+		margin-top: 30px;
+	}
+	h6 {
+	    font-size: 12px;
+	    margin: 0;
+	    color: $px-white;
+	    line-height: 28px;
+	    padding: 0 10px;
+	} 
+	.skill-bar {
+		position: relative;
+		background: $px-white;
+		.skill-bar-in {
+			width: 80px;
+			position: relative;
+			@include transition(ease all 0.55s);
+			span {
+			    position: absolute;
+			    right: 0;
+			    bottom: 15px;
+			    background: $px-dark;
+			    padding: 2px 6px;
+			    color: $px-white;
+			    font-size: 10px;
+			    font-weight: 600;
+			    .dark-theme & {
+			    	color: $px-dark;
+			    	background: $px-white;
+			    }
+			    &:after {
+			    	content: "";
+				    position: absolute;
+				    bottom: -8px;
+				    right: 0;
+				    border-left: 7px solid transparent;
+				    border-top: 8px solid $px-dark;
+				    .dark-theme & {
+				    	border-top: 8px solid $px-white;
+			    	}
+			    }
+			}
+		}
+	}
+	&.md {
+		.skill-bar {
+			.skill-bar-in {	
+				height: 8px;
+			}
+		}
+	}
+
+	&.lg {
+		.skill-bar {
+			.skill-bar-in {	
+				height: 10px;
+			}
+		}
+	}
+	&.light {
+		.skill-bar {
+			background: rgba($px-black, .5);
+		}
+	}
+}

@@ -1,0 +1,137 @@
+.navbar-toggler,
+.toggler-menu {
+	width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+	background: $px-theme;
+	border: none;
+	span {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 25px;
+	    height: 2px;
+	    margin: auto;
+	    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+		background: $px-white;
+		color: $px-white;
+	}
+}
+
+@include up-md {
+	.main-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 11;
+		.fixed-header & {
+			box-shadow: 0 8px 16px rgba(0,0,0,.05);
+			background-color: $px-white;
+		}
+		.navbar-brand {
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 1;
+			padding: 0;
+			color: $px-dark;
+			position: relative;
+			span {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $px-theme;
+				bottom: 5px;
+				right: -8px;
+			}
+		}
+		.header-nav {
+			padding: 0;
+		}
+		.navbar-nav {
+			> li {
+				+ li {
+					padding-left: 15px;
+				}
+				> .nav-link {
+					font-weight: 500;
+					color: $px-dark;
+					font-size: 16px;
+					padding: 22px 0;
+					span {
+					    padding: 5px 20px;
+					    background: transparent;
+					    display: inline-block;
+					    border-radius: 40px;
+					    @include transition(ease all 0.35s);
+					}
+					&.active {
+						color: $px-white;
+						span {
+							background-color: $px-theme;
+						}
+					}
+				}
+				&:hover {
+					> a {
+						color: $px-white;
+						span {
+							background-color: $px-theme;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Mobile 
+-----------------------------*/
+@include down-md {
+	.header-nav {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 5;
+	    .fixed-header & {
+	    	background: $px-white;
+	    }
+		.navbar-brand {
+			font-weight: 600;
+			font-size: 24px;
+			color: $px-dark;
+		}
+		.navbar-nav {
+			padding: 8px 15px;
+		    border: 1px solid #ddd;
+			background: $px-white;
+			> li {
+				+ li {
+					.nav-link {
+						border-top: 1px solid #ddd;		
+					}		
+				}
+			}
+			.nav-link {
+			    font-size: 13px;
+			    font-weight: 500;
+			    text-transform: uppercase;
+			    letter-spacing: 0.035rem;
+			    color: $px-dark;
+			    &.active,
+			    &:hover {
+			    	color: $px-theme;
+			    }
+			}
+		}
+	}
+}
