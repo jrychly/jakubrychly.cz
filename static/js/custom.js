@@ -201,8 +201,11 @@
 		            speed: 200,
 		            loop:true,
 		            strings: [
-		              'Designer',
-		              'Developer'
+		              'Marketing freelancer',
+					  'Marketingový stratég',
+					  'E-mail marketér',
+					  'Výkonnostní marketér',
+		              'Vývojář webových stránek'
 		            ],
 		            breakLines: false
 		        }); 

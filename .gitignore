@@ -9,3 +9,5 @@ css/*.sass
 *.sass
 
 css/style\.css\.map
+
+.DS_store
